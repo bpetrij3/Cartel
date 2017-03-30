@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule /ZimskaZadaca/css/app.css /ZimskaZadaca/css/app.css.php [L]

@@ -1,0 +1,884 @@
+html,body{
+    margin: 0; 
+    padding: 0;
+}
+a{
+    display: inline-block; 
+    color: #181818; 
+    text-decoration: none;
+}
+.tablica{
+    display: table; 
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+.celija{
+    display: table-cell;
+}
+.zaglavlje .tablica{
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+.zaglavlje .logo{
+    width: 25%;
+}
+.zaglavlje .logo a{
+    font-family: 'pacifico', sans-serif;
+    font-size: 30px;
+}
+.zaglavlje .nav{
+    width: 75%;
+}
+.zaglavlje .nav ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.zaglavlje .nav ul li{
+    display: inline-block;
+    float: left;
+    padding: 0 15px;
+}
+.zaglavlje .nav ul li:last-child{
+    padding-right: 0;
+}
+.zaglavlje .nav ul li a{
+    font-family: 'roboto', sans-serif; 
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.naslovnica .tablica{
+    padding: 50px 0; 
+    border-bottom: 1px solid #ddd;
+}
+.naslovnica h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 94px; 
+    font-weight: 900; 
+    text-transform: uppercase;
+    line-height: 0.75;
+}
+.galerija .tablica:first-child{
+    padding: 50px 0 35px 0;
+}
+.galerija .tNav ul{
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+}
+.galerija .tNav ul li{
+    display: inline-block; 
+    float: left; 
+    padding: 0 5px;
+}
+.galerija .tNav ul li a{
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+.galerija .tNav ul li:before{
+    content: '/';
+    display: inline-block; 
+    padding-right: 5px;
+}
+.galerija .tNav ul li:first-child:before{
+    content: '';
+    padding-right: 0;
+}
+.galerija .tablica:last-child{
+    padding: 0px 0 50px 0;
+}
+.galerija .gLista{
+    border-bottom: 1px solid #ddd;
+}
+.galerija .gLista ul{
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+}
+.galerija .gLista ul li{
+    display: inline-block;
+    float: left;
+    background-color: #181818;
+}
+.galerija .gLista ul li:first-child{
+    width: calc(33.33333% - 7.5px); 
+    height: 450px; 
+    margin-right: 7.5px;
+    margin-bottom: 7.5px;
+    background-image :url('../img/nature.jpeg'); 
+    background-size: cover;
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(2),
+.galerija .gLista ul li:nth-child(3){
+    width: calc(33.33333% - 11.25px);
+    height: 217.5px;
+    margin-bottom: 7.5px;
+}
+.galerija .gLista ul li:nth-child(2){
+    margin-right: 3.75px; 
+    margin-left: 7.5px;
+    background-image: url('../img/woman.jpg');
+    background-size:cover; 
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(3){
+    margin-left: 11.25px;
+    background-image: url('../img/laptop.jpeg'); 
+    background-size: cover;
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(4){
+    width: calc(66.66666% - 7.5px);
+    height: 217.5px;
+    margin-top: 7.5px;
+    margin-left: 7.5px;
+    margin-bottom: 7.5px;
+    background-image: url('../img/coffee.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(5){
+    width: calc(33.33333% - 7.5px);
+    height: 217.5px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    margin-right: 7.5px;
+    background-image: url('../img/couple.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(6){
+    width: calc(33.33333% - 11.25px);
+    height: 450px;
+    margin-top: 7.5px;
+    margin-right: 3.75px;
+    margin-left: 7.5px;
+    margin-bottom: 7.5px;
+    background-image: url('../img/happiness.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(7){
+    width: calc(33.33333% - 11.25px); 
+    height: 217.5px; 
+    margin-top: 7.5px;
+    margin-left: 11.25px;
+    margin-bottom: 7.5px;
+    background-image: url('../img/baby.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(8){
+    width: calc(33.33333% - 11.25px);
+    height: 217.5px;
+    margin-top: 7.5px;
+    margin-left: 11.25px;
+    margin-bottom: 7.5px;
+    background-image: url('../img/space.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(9){
+    width: calc(33.33333% - 7.5px); 
+    height: 450px;
+    margin-top: -225px; 
+    margin-right: 7.5px;
+    margin-bottom: 7.5px;
+    background-image: url('../img/animals.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(10){
+    width: calc(66.66666% - 7.5px); 
+    height: 450px; 
+    margin-top: 7.5px; 
+    margin-right: 0px; 
+    margin-left: 7.5px; 
+    background-image: url('../img/city.jpeg'); 
+    background-size: cover; 
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(11){
+    width: calc(33.33333% - 7.5px); 
+    height: 217.5px; 
+    margin-top: -217.5px; 
+    margin-right: 3.75px; 
+    margin-left: 0px; 
+    margin-bottom: 7.5px; 
+    margin-top: calc(-217.5px - 7.5px); 
+    background-image: url('../img/travel.jpeg'); 
+    background-size: cover; 
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(12){
+    width: calc(33.33333% - 7.5px); 
+    height: 217.5px; 
+    margin-top: 7.5px; 
+    margin-right: 7.5px; 
+    margin-left: 0px; 
+    background-image: url('../img/kiss.jpg'); 
+    background-size: cover; 
+    background-position: center center;
+}
+.galerija .gLista ul li:nth-child(13){
+    width: calc(66.66666% - 7.5px);
+    height: 217.5px; 
+    margin-top: 7.5px; 
+    margin-left: 7.5px; 
+    margin-bottom: 0px; 
+    background-image: url('../img/world.jpg'); 
+    background-size: cover;
+}
+.galerija .gLista ul li a{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    padding: 50px 0;
+}
+footer .podnozje .celija{
+    width: 33.33333%;
+}
+footer .podnozje .logo{
+    padding-right: 7.5px;
+}
+footer .podnozje .logo a{
+    font-family: 'pacifico', sans-serif;
+    font-size: 24px;
+    color: #888;
+}
+footer .podnozje .logo p{
+    margin: 30px 0 0 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #888;
+    line-height: 1.4;
+}
+footer .podnozje .celija h2{
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    color: #888;
+    text-transform: uppercase;
+}
+footer .podnozje .post{
+    padding: 0 7.5px;
+}
+footer .podnozje .post ul{
+    margin: 32px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+footer .podnozje .post ul li{
+    display: inline-block; 
+    width: 100%;
+    margin-bottom: 10px;
+}
+footer .podnozje .post ul li a{
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #181818;
+}
+footer .podnozje .post ul li a span{
+    color: #888;
+}
+footer .podnozje .colla{
+    padding: 0 7.5px;
+}
+footer .podnozje .colla p{
+    margin: 32px 0 0 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #888;
+}
+footer .podnozje .colla p span{
+    color: #181818;
+}
+footer .info .tablica{
+    padding-top: 35px;
+}
+footer .info ul{
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+    text-align: center;
+}
+footer .info ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+footer .info ul li a{
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #888;
+    text-transform: uppercase;
+}
+footer .info ul li a span{
+    color: #181818;
+}
+footer .info p{
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+}
+footer .info p a{
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: red;
+    text-transform: uppercase;
+}
+footer .aTop{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0) rotate(90deg);
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    color:#888;
+}
+
+/* ABOUT */
+article .about-info p{
+    margin: 50px 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #888;
+    line-height:1.4;
+}
+article .about-staff .celija{
+    width: 33.33333%
+}
+article .about-staff .celija:first-child{
+    padding-right: 7.5px;
+}
+article .about-staff .celija:nth-child(2){
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+article .about-staff .celija:last-child{
+    padding-left: 7.5px;
+}
+article .about-staff .celija:first-child .img{
+    width: 100%;
+    height: 175px;
+    background-image: url('../img/jasonadams.jpeg'); background-size: cover;
+    background-position: center center;
+}
+article .about-staff .celija:nth-child(2) .img{
+    width: 100%;
+    height: 175px;
+    background-image: url('../img/petertorkin.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+article .about-staff .celija:last-child .img{
+    width: 100%;
+    height: 175px;
+    background-image: url('../img/ellewoods.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+article .about-staff h2{
+    margin: 35px 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    color: #181818;
+    text-transform: uppercase;
+}
+article .about-staff p{
+    margin: 0 0 35px 0;
+    font-family: 'roboto', sans-serif; 
+    font-size: 14px;
+    color: #888;
+    line-height: 1.4;
+}
+article .about-staff ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+article .about-staff ul li{
+    display: inline-block;
+}
+article .about-staff ul li a{
+    font-size: 18px;
+}
+
+/* SLIKA U PODNOŽJU */
+.slika .tablica{
+    padding: 0 0 60px; 
+    border-bottom: 1px solid #ddd;
+}
+.slika .tablica .celija div{
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/visitus.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+
+/* BLOG */
+.blog-list .tablica{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+}
+.blog-list .celija:first-child{
+    width: 70%;
+}
+.blog-list .celija:last-child{
+    width: 30%;
+}
+.blog-list article{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+}
+.blog-list article:first-child{
+    padding: 30px;
+    background-color: #eee;
+}
+.blog-list article .blogImg{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center center;
+}
+.blog-list article h2{
+    margin: 25px 0 0 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: .8;
+}
+.blog-list article p:nth-child(3){
+    margin:0 0 25px 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    line-height: 1.4;
+}
+.blog-list article p:nth-child(3) time{
+    color: #181818;
+}
+.blog-list article p:nth-child(3) a{
+    color: red;
+}
+.blog-list article p:nth-child(4){
+    margin: 0 0 25px 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    line-height: 1.4;
+}
+.blog-list article a:nth-child(5){
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: red;
+    line-height: 1.4;
+}
+.blog-list .post-nav{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: red;
+    line-height: 1.4;
+}
+
+/* ASIDE - SIDEBAR */
+.blog-list .celija:last-child{
+    vertical-align: top;
+}
+.blog-list .celija:last-child aside{
+    padding-left: 35px;
+}
+.blog-list .celija:last-child aside .search{
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ddd;
+}
+.blog-list .celija:last-child aside .search .s{
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+.blog-list .celija:last-child aside .search .submit{
+    height: 50px;
+    padding: 0 15px;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+}
+.blog-list .celija:last-child aside .search .submit:hover{
+    border-color: #181818;
+    background-color: #181818;
+    cursor: pointer;
+}
+
+.blog-list .celija:last-child aside .widget{
+    margin-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ddd;
+}
+.blog-list .celija:last-child aside .widget h2{
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    color: #888;
+    text-transform: uppercase;
+}
+.blog-list .celija:last-child aside .widget ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.blog-list .celija:last-child aside .widget ul li{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+.blog-list .celija:last-child aside .widget ul li a{
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #181818;
+}
+.blog-list .celija:last-child aside .widget ul li a:hover{
+    color: red;
+}
+
+.blog-list .celija:last-child aside .tags{
+    margin-top: 35px;
+    padding-bottom: 35px;
+    display: inline-block;
+}
+.blog-list .celija:last-child aside .tags h2{
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    color: #888;
+    text-transform: uppercase;
+}
+.blog-list .celija:last-child aside .tags ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.blog-list .celija:last-child aside .tags ul li{
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.blog-list .celija:last-child aside .tags ul li a{
+    padding: 5px 10px;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #181818;
+    background-color: #ddd;
+}
+.blog-list .celija:last-child aside .tags ul li a:hover{
+    color: red;
+}
+.blog-list .celija:last-child aside .tags ul li a span{
+    color: #888;
+}
+
+/* ARTICLE */
+.article .tablica{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+}
+.article .celija:first-child{
+    width: 70%;
+}
+.article .celija:last-child{
+    width: 30%;
+}
+.article article{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+}
+.article-single article{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.article article .blogImg{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center center;
+}
+.article article h2{
+    margin: 25px 0 0 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: .8;
+}
+.article article p:nth-child(3){
+    margin: 0 0 25px 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    line-height: 1.4;
+}
+.article article p:nth-child(3) time{
+    color: #181818;
+}
+.article article p:nth-child(3) a{
+    color: red;
+}
+.article article p:nth-child(n+4){
+    margin: 0 0 25px 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    line-height: 1.4;
+}
+.article article a:nth-child(5){
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: red;
+    line-height: 1.4;
+}
+.article .post-nav{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: red;
+    line-height: 1.4;
+}
+
+.article article .gallery {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.article article .gallery li{
+    display: inline-block;
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+}
+.article article .gallery li img{
+    width: 100%;
+    height: auto;
+}
+
+.article article .tags{
+    display: inline-block; 
+    width: 100%; 
+    float: left; 
+    padding: 0 0 50px 0;
+    margin: 35px 0 50px 0; 
+    list-style: none; 
+    border-bottom: 1px solid #ddd;
+}
+.article article .tags li{
+    display: inline-block;
+    margin-right: 5px;
+    float: left;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    line-height: 1.4;
+}
+.article article .tags li a{
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: red;
+    line-height: 1.4;
+}
+
+.article article .comments h3{
+    font-family: 'roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #181818;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+.article article .comments p{
+    margin: 0 0 25px 0; 
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    line-height: 1.4;
+}
+.article article .comments form input{
+    width: calc(60% - 30px); 
+    padding: 15px;
+    margin-bottom: 20px;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    line-height: 1.4;
+    border: 1px solid #ddd;
+}
+.article article .comments form textarea{
+    width: calc(100% - 30px);
+    height: calc(250px - 30px);
+    padding: 15px;
+    margin-bottom: 20px;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    line-height: 1.4;
+    border: 1px solid #ddd;
+    resize: none;
+}
+.article article .comments form input:last-child{
+    cursor: pointer;
+    width: initial;
+    padding: 15px 30px;
+    margin-bottom: 0;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+/* ARTICLE ASIDE - SIDEBAR */
+.article .celija:last-child{
+    vertical-align: top;
+}
+.article .celija:last-child aside{
+    padding-left: 35px;
+}
+.article .celija:last-child aside .search{
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ddd;
+}
+.article .celija:last-child aside .search .s{
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+.article .celija:last-child aside .search .submit{
+    height: 50px;
+    padding: 0 15px;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+}
+.article .celija:last-child aside .search .submit:hover{
+    border-color: #181818;
+    background-color: #181818;
+    cursor: pointer;
+}
+
+.article .celija:last-child aside .widget{
+    margin-top: 35px;
+    padding-bottom: 35px;
+    border-bottom:1px solid #ddd;
+}
+.article .celija:last-child aside .widget h2{
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    color: #888;
+    text-transform: uppercase;
+}
+.article .celija:last-child aside .widget ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.article .celija:last-child aside .widget ul li{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+.article .celija:last-child aside .widget ul li a{
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #181818;
+}
+.article .celija:last-child aside .widget ul li a:hover{
+    color: red;
+}
+
+.article .celija:last-child aside .tags{
+    margin-top: 35px;
+    padding-bottom: 35px;
+    display: inline-block;
+}
+.article .celija:last-child aside .tags h2{
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    color: #888;
+    text-transform: uppercase;
+}
+.article .celija:last-child aside .tags ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.article .celija:last-child aside .tags ul li{
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.article .celija:last-child aside .tags ul li a{
+    padding: 5px 10px;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px; 
+    color: #181818;
+    background-color: #ddd;
+}
+.article .celija:last-child aside .tags ul li a:hover{
+    color: red;
+}
+.article .celija:last-child aside .tags ul li a span{
+    color: #888;
+}
