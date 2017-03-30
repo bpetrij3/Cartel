@@ -16,7 +16,7 @@ include_once 'konfiguracija.php';
             <section class="naslovnica">
                 <div class="tablica">
                     <div class="celija">
-                        <h1>Welcome to cartel creative wordpress theme</h1>
+                        <h1>Welcome to cartel creative wordpress theme!</h1>
                     </div>
                 </div>
             </section>
